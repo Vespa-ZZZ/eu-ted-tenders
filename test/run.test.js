@@ -6,10 +6,13 @@ import { run } from '../src/run.js';
 const page = JSON.parse(readFileSync(new URL('./fixtures/search-page.json', import.meta.url), 'utf8'));
 const NOW = () => new Date('2026-11-03T10:00:00Z');
 
-async function exec(input, respond, state = new Map()) {
+async function exec(input, respond, state = new Map(), chargeResult) {
     const records = [];
     const lifecycle = [];
     const bodies = [];
+    const warnings = [];
+    const values = new Map();
+    let pushes = 0;
     const actor = {
         async init() {},
         async getInput() { return input; },
@@ -19,19 +22,23 @@ async function exec(input, respond, state = new Map()) {
                 setValue: async (k, v) => { state.set(k, structuredClone(v)); },
             };
         },
-        async pushData(r) { records.push(...r); },
-        async setValue() {},
+        async pushData(rows) {
+            pushes++;
+            records.push(...(chargeResult?.eventChargeLimitReached ? rows.slice(0, chargeResult.chargedCount) : rows));
+            return chargeResult;
+        },
+        async setValue(k, v) { values.set(k, v); },
         async exit() { lifecycle.push('exit'); },
         async fail(m) { lifecycle.push('fail', m); },
     };
-    const log = { info() {}, warning() {}, error() {} };
+    const log = { info() {}, warning(m) { warnings.push(m); }, error() {} };
     const fetchImpl = async (url, init) => {
         const b = JSON.parse(init.body);
         bodies.push(b);
         return respond(b, bodies.length);
     };
     await run({ actor, log, fetchImpl, sleep: async () => {}, now: NOW });
-    return { records, lifecycle, bodies, state };
+    return { records, lifecycle, bodies, state, warnings, pushes, summary: values.get('RUN_SUMMARY') };
 }
 
 const ok = (obj) => new Response(JSON.stringify(obj));
@@ -53,6 +60,24 @@ test('monitoring mode only returns new notices', async () => {
     assert.equal(first.records.length, 3);
     const second = await exec({ keywords: ['cloud'], onlyNew: true }, () => ok({ ...page, iterationNextToken: null }), state);
     assert.equal(second.records.length, 0);
+});
+
+test('a partially stored page leaves the remaining notices unseen and stops pagination', async () => {
+    const input = { keywords: ['cloud'], onlyNew: true };
+    const state = new Map();
+    const first = await exec(input, () => ok({ ...page, iterationNextToken: 'MORE' }), state,
+        { eventChargeLimitReached: true, chargedCount: 1 });
+    assert.deepEqual(first.lifecycle, ['exit']);
+    assert.equal(first.bodies.length, 1);
+    assert.equal(first.pushes, 1);
+    assert.equal(first.summary.pushed, 1);
+    assert.match(first.warnings[0], /charge limit reached/i);
+    assert.deepEqual(Object.keys(state.get('seen-default')), first.records.map((r) => r.publicationNumber));
+
+    const next = await exec(input, () => ok({ ...page, iterationNextToken: null }), state,
+        { eventChargeLimitReached: false, chargedCount: 0 });
+    assert.equal(next.summary.pushed, 2);
+    assert.ok(next.records.every((r) => r.publicationNumber !== first.records[0].publicationNumber));
 });
 
 test('onlyOpen drops notices whose deadlines have passed', async () => {

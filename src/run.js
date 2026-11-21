@@ -97,6 +97,7 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
         let pushed = 0;
         let total = null;
         let pages = 0;
+        let chargeLimitReached = false;
         do {
             const body = { query, fields: FIELDS, limit: PAGE_SIZE, paginationMode: 'ITERATION', ...(token ? { iterationNextToken: token } : {}) };
             const page = await search(body);
@@ -116,11 +117,17 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
                 if (pushed + out.length >= maxItems) break;
             }
             if (out.length) {
-                await actor.pushData(out);
-                pushed += out.length;
+                const result = await actor.pushData(out);
+                chargeLimitReached = result?.eventChargeLimitReached === true;
+                const saved = chargeLimitReached ? out.slice(0, result.chargedCount) : out;
+                pushed += saved.length;
                 // Marked seen in memory only; the state is saved after the whole search completed, so a run
                 // that fails on a later page (e.g. a time-out) does not hide its earlier notices from the next run.
-                for (const r of out) seenMap.set(r.publicationNumber, r.publicationDate ?? isoDay(now()));
+                for (const r of saved) seenMap.set(r.publicationNumber, r.publicationDate ?? isoDay(now()));
+                if (chargeLimitReached) {
+                    log.warning('Pay-per-event charge limit reached. Stopping dataset output.');
+                    break;
+                }
             }
             token = page.notices.length ? page.iterationNextToken : null;
         } while (token && pushed < maxItems);
@@ -131,7 +138,7 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
         }
 
         await actor.setValue('RUN_SUMMARY', { query, totalMatching: total, pushed, pages });
-        if (pushed === 0) log.info(onlyNew ? 'No new notices since the last run.' : 'No notices matched.');
+        if (pushed === 0 && !chargeLimitReached) log.info(onlyNew ? 'No new notices since the last run.' : 'No notices matched.');
         log.info(`Done. Pushed ${pushed} notices.`);
         await actor.exit();
     } catch (err) {

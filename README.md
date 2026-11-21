@@ -81,7 +81,7 @@ Advanced: add any TED expert-search condition with `customQuery`, e.g. `"customQ
 ## Notes
 
 - One search request per 100 notices, sequential, with a pause between pages. Narrow the filters for very broad searches; if TED reports a search time-out the run fails (and, in monitoring mode, nothing is marked as seen) so you can rerun with narrower filters.
-- In monitoring mode, notices are marked as seen when the whole search completed; notices beyond `maxItems` are returned by the next run while they are still within the date window. Do not run two schedules with the same `stateKey` at the same time.
+- In monitoring mode, saved notices are marked as seen when the search completes or reaches the pay-per-event spending limit. The run warns and stops at the spending limit. Remaining notices are eligible on the next run while they still match the search, as with `maxItems`. Do not run two schedules with the same `stateKey` at the same time.
 
 ## Data source & terms
 
