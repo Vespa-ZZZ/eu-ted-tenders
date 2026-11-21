@@ -1,0 +1,62 @@
+{
+    "actorSpecification": 1,
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "publicationDate",
+                    "noticeType",
+                    "title",
+                    "buyerName",
+                    "buyerCountry",
+                    "cpvCodes",
+                    "earliestDeadline",
+                    "estimatedValue",
+                    "estimatedValueCurrency",
+                    "noticeUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "publicationDate": {
+                        "label": "Published",
+                        "format": "date"
+                    },
+                    "noticeType": {
+                        "label": "Type"
+                    },
+                    "title": {
+                        "label": "Title"
+                    },
+                    "buyerName": {
+                        "label": "Buyer"
+                    },
+                    "buyerCountry": {
+                        "label": "Country"
+                    },
+                    "cpvCodes": {
+                        "label": "CPV",
+                        "format": "array"
+                    },
+                    "earliestDeadline": {
+                        "label": "Deadline",
+                        "format": "date"
+                    },
+                    "estimatedValue": {
+                        "label": "Est. value",
+                        "format": "number"
+                    },
+                    "estimatedValueCurrency": {
+                        "label": "Cur."
+                    },
+                    "noticeUrl": {
+                        "label": "Notice",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+{
+    "title": "EU public tenders (TED)",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keywords": {
+            "title": "Keywords (any)",
+            "type": "array",
+            "editor": "stringList",
+            "prefill": [
+                "cloud"
+            ],
+            "description": "Full-text search over the notice (any language). Several keywords are combined with OR."
+        },
+        "cpvCodes": {
+            "title": "CPV codes",
+            "type": "array",
+            "editor": "stringList",
+            "description": "Common Procurement Vocabulary codes (8 digits, check digit optional). Matching is hierarchical: 72000000 also finds 72200000, 72212000 … e.g. 72000000 IT services, 45000000 construction, 33000000 medical equipment."
+        },
+        "countries": {
+            "title": "Buyer countries",
+            "type": "array",
+            "editor": "stringList",
+            "description": "ISO 3166 alpha-3 codes of the buyer's country, e.g. DEU, FRA, ITA, ESP, POL, NLD."
+        },
+        "noticeTypes": {
+            "title": "Notice types",
+            "type": "array",
+            "editor": "select",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "cn-standard",
+                    "cn-social",
+                    "cn-desg",
+                    "pin-only",
+                    "pin-cfc-standard",
+                    "pin-cfc-social",
+                    "pin-rtl",
+                    "can-standard",
+                    "can-social",
+                    "can-desg",
+                    "can-tran",
+                    "can-modif",
+                    "veat",
+                    "qu-sy",
+                    "subco",
+                    "pmc",
+                    "corr"
+                ],
+                "enumTitles": [
+                    "Contract notice",
+                    "Contract notice – social/other services",
+                    "Design contest notice",
+                    "Prior information notice (only)",
+                    "PIN used as call for competition",
+                    "PIN call for competition – social",
+                    "PIN shortening time limits",
+                    "Contract award notice",
+                    "Contract award notice – social",
+                    "Design contest result",
+                    "Contract award notice – transport (PSO)",
+                    "Contract modification notice",
+                    "Voluntary ex-ante transparency notice",
+                    "Qualification system",
+                    "Subcontracting notice",
+                    "Pre-market consultation",
+                    "Corrigendum"
+                ]
+            },
+            "prefill": [
+                "cn-standard",
+                "cn-social"
+            ],
+            "description": "Limit to these notice types. Contract notices (cn-…) are open calls for tenders. Leave empty for all."
+        },
+        "publishedFrom": {
+            "title": "Published from",
+            "type": "string",
+            "editor": "datepicker",
+            "description": "Earliest publication date (YYYY-MM-DD). If no date and no custom query is given, the last 'Days back' days are searched."
+        },
+        "publishedTo": {
+            "title": "Published to",
+            "type": "string",
+            "editor": "datepicker",
+            "description": "Latest publication date (YYYY-MM-DD)."
+        },
+        "daysBack": {
+            "title": "Days back (default window)",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 365,
+            "default": 7,
+            "description": "Used only when neither publication date nor a custom query is set."
+        },
+        "onlyOpen": {
+            "title": "Only notices with an open deadline",
+            "type": "boolean",
+            "default": false,
+            "description": "Drop notices whose tender submission deadlines (date and time, all lots) have passed. Notices without a deadline are dropped too."
+        },
+        "language": {
+            "title": "Preferred language",
+            "type": "string",
+            "editor": "textfield",
+            "default": "eng",
+            "description": "3-letter code for titles, buyer names and links (eng, deu, fra, ita, spa, pol …). Falls back to English, then any available language."
+        },
+        "customQuery": {
+            "title": "Custom TED expert query (advanced)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Optional extra condition in TED expert search syntax, combined with the filters above by AND, e.g. buyer-city = Wien."
+        },
+        "onlyNew": {
+            "title": "Monitoring mode: only new notices",
+            "type": "boolean",
+            "default": false,
+            "description": "Remember notices already returned and output only new ones. Schedule daily with a short window (e.g. daysBack 3)."
+        },
+        "stateKey": {
+            "title": "Monitoring state key",
+            "type": "string",
+            "editor": "textfield",
+            "pattern": "^[a-zA-Z0-9_-]{1,50}$",
+            "default": "default",
+            "description": "Separate 'already seen' list per search. Letters, digits, - and _ only. Do not run two schedules with the same key at the same time."
+        },
+        "maxItems": {
+            "title": "Max notices",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50000,
+            "default": 500,
+            "description": "Maximum number of notices to output."
+        },
+        "requestIntervalMs": {
+            "title": "Delay between API pages (ms)",
+            "type": "integer",
+            "minimum": 2000,
+            "default": 2000,
+            "description": "Pause between search requests (100 notices per page)."
+        }
+    }
+}

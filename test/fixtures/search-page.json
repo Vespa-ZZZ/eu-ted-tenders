@@ -1,0 +1,544 @@
+{
+  "notices": [
+    {
+      "place-of-performance": [
+        "DEF02",
+        "DEU",
+        "DEF02",
+        "DEF02",
+        "DEF02",
+        "DEF02",
+        "DEF02",
+        "DEF02",
+        "DEF02",
+        "DEF02",
+        "DEU",
+        "DEU",
+        "DEU",
+        "DEU",
+        "DEU",
+        "DEU",
+        "DEU",
+        "DEU"
+      ],
+      "deadline-receipt-tender-date-lot": [
+        "2026-11-04+01:00",
+        "2026-11-04+01:00",
+        "2026-11-04+01:00",
+        "2026-11-04+01:00",
+        "2026-11-04+01:00",
+        "2026-11-04+01:00",
+        "2026-11-04+01:00",
+        "2026-11-04+01:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "757629-2026",
+      "buyer-country": [
+        "DEU"
+      ],
+      "description-lot": {
+        "deu": [
+          "Betriebsberatung, Fachberatung und Entwicklung deegree.pro",
+          "Betriebsberatung, Fachberatung und Entwicklung mapserver/deegree commu-nity",
+          "Betriebsberatung, Fachberatung und Entwicklung geoserver (Cloud)",
+          "Betriebsberatung, Fachberatung und Entwicklung LDProxy",
+          "Betriebsberatung, Fachberatung und Entwicklung XPlanBox",
+          "Fachberatung und Entwicklung Masterportal: ACHTUNG: Vertragsstart erst am 09.11.2027",
+          "Betriebsberatung, Fachberatung und Entwicklung QGIS",
+          "Pflege und Wartung von Civitas Core"
+        ]
+      },
+      "procedure-type": "open",
+      "classification-cpv": [
+        "72000000",
+        "72000000",
+        "72000000",
+        "72000000",
+        "72000000",
+        "72000000",
+        "72000000",
+        "72000000",
+        "72000000"
+      ],
+      "contract-nature": [
+        "services",
+        "services",
+        "services",
+        "services",
+        "services",
+        "services",
+        "services",
+        "services",
+        "services"
+      ],
+      "publication-date": "2026-11-02+01:00",
+      "buyer-name": {
+        "deu": [
+          "Dataport AöR"
+        ]
+      },
+      "links": {
+        "xml": {
+          "MUL": "https://ted.europa.eu/en/notice/757629-2026/xml"
+        },
+        "pdf": {
+          "BUL": "https://ted.europa.eu/bg/notice/757629-2026/pdf",
+          "SPA": "https://ted.europa.eu/es/notice/757629-2026/pdf",
+          "CES": "https://ted.europa.eu/cs/notice/757629-2026/pdf",
+          "DAN": "https://ted.europa.eu/da/notice/757629-2026/pdf",
+          "DEU": "https://ted.europa.eu/de/notice/757629-2026/pdf",
+          "EST": "https://ted.europa.eu/et/notice/757629-2026/pdf",
+          "ELL": "https://ted.europa.eu/el/notice/757629-2026/pdf",
+          "ENG": "https://ted.europa.eu/en/notice/757629-2026/pdf",
+          "FRA": "https://ted.europa.eu/fr/notice/757629-2026/pdf",
+          "GLE": "https://ted.europa.eu/ga/notice/757629-2026/pdf",
+          "HRV": "https://ted.europa.eu/hr/notice/757629-2026/pdf",
+          "ITA": "https://ted.europa.eu/it/notice/757629-2026/pdf",
+          "LAV": "https://ted.europa.eu/lv/notice/757629-2026/pdf",
+          "LIT": "https://ted.europa.eu/lt/notice/757629-2026/pdf",
+          "HUN": "https://ted.europa.eu/hu/notice/757629-2026/pdf",
+          "MLT": "https://ted.europa.eu/mt/notice/757629-2026/pdf",
+          "NLD": "https://ted.europa.eu/nl/notice/757629-2026/pdf",
+          "POL": "https://ted.europa.eu/pl/notice/757629-2026/pdf",
+          "POR": "https://ted.europa.eu/pt/notice/757629-2026/pdf",
+          "RON": "https://ted.europa.eu/ro/notice/757629-2026/pdf",
+          "SLK": "https://ted.europa.eu/sk/notice/757629-2026/pdf",
+          "SLV": "https://ted.europa.eu/sl/notice/757629-2026/pdf",
+          "FIN": "https://ted.europa.eu/fi/notice/757629-2026/pdf",
+          "SWE": "https://ted.europa.eu/sv/notice/757629-2026/pdf"
+        },
+        "pdfs": {
+          "DEU": "https://ted.europa.eu/de/notice/757629-2026/pdfs"
+        },
+        "html": {
+          "BUL": "https://ted.europa.eu/bg/notice/-/detail/757629-2026",
+          "SPA": "https://ted.europa.eu/es/notice/-/detail/757629-2026",
+          "CES": "https://ted.europa.eu/cs/notice/-/detail/757629-2026",
+          "DAN": "https://ted.europa.eu/da/notice/-/detail/757629-2026",
+          "DEU": "https://ted.europa.eu/de/notice/-/detail/757629-2026",
+          "EST": "https://ted.europa.eu/et/notice/-/detail/757629-2026",
+          "ELL": "https://ted.europa.eu/el/notice/-/detail/757629-2026",
+          "ENG": "https://ted.europa.eu/en/notice/-/detail/757629-2026",
+          "FRA": "https://ted.europa.eu/fr/notice/-/detail/757629-2026",
+          "GLE": "https://ted.europa.eu/ga/notice/-/detail/757629-2026",
+          "HRV": "https://ted.europa.eu/hr/notice/-/detail/757629-2026",
+          "ITA": "https://ted.europa.eu/it/notice/-/detail/757629-2026",
+          "LAV": "https://ted.europa.eu/lv/notice/-/detail/757629-2026",
+          "LIT": "https://ted.europa.eu/lt/notice/-/detail/757629-2026",
+          "HUN": "https://ted.europa.eu/hu/notice/-/detail/757629-2026",
+          "MLT": "https://ted.europa.eu/mt/notice/-/detail/757629-2026",
+          "NLD": "https://ted.europa.eu/nl/notice/-/detail/757629-2026",
+          "POL": "https://ted.europa.eu/pl/notice/-/detail/757629-2026",
+          "POR": "https://ted.europa.eu/pt/notice/-/detail/757629-2026",
+          "RON": "https://ted.europa.eu/ro/notice/-/detail/757629-2026",
+          "SLK": "https://ted.europa.eu/sk/notice/-/detail/757629-2026",
+          "SLV": "https://ted.europa.eu/sl/notice/-/detail/757629-2026",
+          "FIN": "https://ted.europa.eu/fi/notice/-/detail/757629-2026",
+          "SWE": "https://ted.europa.eu/sv/notice/-/detail/757629-2026"
+        },
+        "htmlDirect": {
+          "BUL": "https://ted.europa.eu/bg/notice/757629-2026/html",
+          "SPA": "https://ted.europa.eu/es/notice/757629-2026/html",
+          "CES": "https://ted.europa.eu/cs/notice/757629-2026/html",
+          "DAN": "https://ted.europa.eu/da/notice/757629-2026/html",
+          "DEU": "https://ted.europa.eu/de/notice/757629-2026/html",
+          "EST": "https://ted.europa.eu/et/notice/757629-2026/html",
+          "ELL": "https://ted.europa.eu/el/notice/757629-2026/html",
+          "ENG": "https://ted.europa.eu/en/notice/757629-2026/html",
+          "FRA": "https://ted.europa.eu/fr/notice/757629-2026/html",
+          "GLE": "https://ted.europa.eu/ga/notice/757629-2026/html",
+          "HRV": "https://ted.europa.eu/hr/notice/757629-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/757629-2026/html",
+          "LAV": "https://ted.europa.eu/lv/notice/757629-2026/html",
+          "LIT": "https://ted.europa.eu/lt/notice/757629-2026/html",
+          "HUN": "https://ted.europa.eu/hu/notice/757629-2026/html",
+          "MLT": "https://ted.europa.eu/mt/notice/757629-2026/html",
+          "NLD": "https://ted.europa.eu/nl/notice/757629-2026/html",
+          "POL": "https://ted.europa.eu/pl/notice/757629-2026/html",
+          "POR": "https://ted.europa.eu/pt/notice/757629-2026/html",
+          "RON": "https://ted.europa.eu/ro/notice/757629-2026/html",
+          "SLK": "https://ted.europa.eu/sk/notice/757629-2026/html",
+          "SLV": "https://ted.europa.eu/sl/notice/757629-2026/html",
+          "FIN": "https://ted.europa.eu/fi/notice/757629-2026/html",
+          "SWE": "https://ted.europa.eu/sv/notice/757629-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Németország – IT-szolgáltatások: tanácsadás, szoftverfejlesztés, internet és támogatás – RV GeoOpenSource",
+        "lav": "Vācija – IT pakalpojumi konsultēšana, programmatūras izstrāde, internets un atbalsts – RV GeoOpenSource",
+        "swe": "Tyskland – IT-tjänster: konsultverksamhet, programvaruutveckling, Internet och stöd – RV GeoOpenSource",
+        "gle": "An Ghearmáin – IT services: consulting, software development, Internet and support – RV GeoOpenSource",
+        "ell": "Γερμανία – Υπηρεσίες τεχνολογίας των πληροφοριών: παροχή συμβουλών, ανάπτυξη λογισμικού, Διαδίκτυο και υποστήριξη – RV GeoOpenSource",
+        "spa": "[removed]",
+        "est": "Saksamaa – IT-teenused: nõuande-, tarkvaraarendus-, Interneti- ja tugiteenused – RV GeoOpenSource",
+        "nld": "Duitsland – IT-diensten: adviezen, softwareontwikkeling, internet en ondersteuning – RV GeoOpenSource",
+        "fin": "Saksa – Tietotekniset palvelut: neuvonta, ohjelmistojen kehittäminen, Internet ja tuki – RV GeoOpenSource",
+        "pol": "Niemcy – Usługi informatyczne: konsultacyjne, opracowywania oprogramowania, internetowe i wsparcia – RV GeoOpenSource",
+        "hrv": "Njemačka – Usluge informacijske tehnologije: savjetovanje, razvoj programske podrške, internet i podrška – RV GeoOpenSource",
+        "ces": "Německo – Informační technologie: poradenství, vývoj programového vybavení, internet a podpora – RV GeoOpenSource",
+        "dan": "Tyskland – It-tjenester: rådgivning, programmeludvikling, internet og support – RV GeoOpenSource",
+        "ron": "Germania – Servicii IT: consultanţă, dezvoltare de software, internet şi asistenţă – RV GeoOpenSource",
+        "por": "Alemanha – Serviços de TI: consultoria, desenvolvimento de software, Internet e apoio – RV GeoOpenSource",
+        "slk": "Nemecko – Služby informačných technológií: konzultácie, vývoj softvéru, internet a podpora – RV GeoOpenSource",
+        "fra": "Allemagne – Services de technologies de l'information, conseil, développement de logiciels, internet et appui – RV GeoOpenSource",
+        "mlt": "Il-Ġermanja – Servizzi ta' IT: konsulenza, żvilupp ta' softwer, Internet u appoġġ – RV GeoOpenSource",
+        "deu": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – RV GeoOpenSource",
+        "lit": "Vokietija – IT paslaugos: konsultavimas, programinės įrangos kūrimas, internetas ir aptarnavimo paslaugos – RV GeoOpenSource",
+        "ita": "Germania – Servizi informatici: consulenza, sviluppo di software, Internet e supporto – RV GeoOpenSource",
+        "bul": "Гepмaния – ИТ услуги: консултации, разработване на софтуер, Интернет и поддръжка – RV GeoOpenSource",
+        "slv": "Nemčija – Storitve informacijske tehnologije: svetovanje, razvoj programske opreme, internet in podpora – RV GeoOpenSource",
+        "eng": "Germany – IT services: consulting, software development, Internet and support – RV GeoOpenSource"
+      },
+      "buyer-city": {
+        "mul": [
+          "Altenholz"
+        ]
+      },
+      "title-lot": {
+        "deu": [
+          "Los 1",
+          "Los 2:",
+          "Los 3",
+          "Los 4",
+          "Los 5",
+          "Los 6",
+          "Los 7",
+          "Los 8"
+        ]
+      }
+    },
+    {
+      "place-of-performance": [
+        "DEA22",
+        "DEU",
+        "DEA22",
+        "DEU"
+      ],
+      "deadline-receipt-tender-date-lot": [
+        "2026-11-11+01:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "758597-2026",
+      "buyer-country": [
+        "DEU"
+      ],
+      "description-lot": {
+        "deu": [
+          "Kauf von vier baugleichen 19-Zoll-Rack-Servern einschließlich Lizenzen für das Remote-Management sowie Herstellergarantie und Support. Die Server werden als Hosts für die virtuelle Desktop-Infrastruktur (VDI) in der bestehenden Virtualisierungsumgebung des Auftraggebers (VMware vSphere/ESXi) eingesetzt. Alle vier Server sind identisch zu konfigurieren. Zum Leistungsumfang gehört die Lieferung der vollständig aufgebauten, ab Werk funktionsgeprüften Server an den Standort Mittelstraße 43 in Bonn (Abschnitt 6). Einbau in das Serverrack, Inbetriebnahme sowie Installation und Konfiguration des Hypervisors erfolgen durch den Auftraggeber. Die Lieferung aller vier Server soll baldmöglichst nach Zuschlagserteilung erfolgen - spätestens jedoch bis zum 18.12.2026. Angebote mit einem späteren Liefertermin werden ausgeschlossen. (s. A02)"
+        ]
+      },
+      "procedure-type": "open",
+      "classification-cpv": [
+        "48820000",
+        "30236110",
+        "30200000",
+        "50312000",
+        "48820000",
+        "30236110",
+        "30200000",
+        "50312000"
+      ],
+      "contract-nature": [
+        "supplies",
+        "supplies"
+      ],
+      "publication-date": "2026-11-02+01:00",
+      "buyer-name": {
+        "deu": [
+          "Studienstiftung des deutschen Volkes e. V."
+        ]
+      },
+      "links": {
+        "xml": {
+          "MUL": "https://ted.europa.eu/en/notice/758597-2026/xml"
+        },
+        "pdf": {
+          "BUL": "https://ted.europa.eu/bg/notice/758597-2026/pdf",
+          "SPA": "https://ted.europa.eu/es/notice/758597-2026/pdf",
+          "CES": "https://ted.europa.eu/cs/notice/758597-2026/pdf",
+          "DAN": "https://ted.europa.eu/da/notice/758597-2026/pdf",
+          "DEU": "https://ted.europa.eu/de/notice/758597-2026/pdf",
+          "EST": "https://ted.europa.eu/et/notice/758597-2026/pdf",
+          "ELL": "https://ted.europa.eu/el/notice/758597-2026/pdf",
+          "ENG": "https://ted.europa.eu/en/notice/758597-2026/pdf",
+          "FRA": "https://ted.europa.eu/fr/notice/758597-2026/pdf",
+          "GLE": "https://ted.europa.eu/ga/notice/758597-2026/pdf",
+          "HRV": "https://ted.europa.eu/hr/notice/758597-2026/pdf",
+          "ITA": "https://ted.europa.eu/it/notice/758597-2026/pdf",
+          "LAV": "https://ted.europa.eu/lv/notice/758597-2026/pdf",
+          "LIT": "https://ted.europa.eu/lt/notice/758597-2026/pdf",
+          "HUN": "https://ted.europa.eu/hu/notice/758597-2026/pdf",
+          "MLT": "https://ted.europa.eu/mt/notice/758597-2026/pdf",
+          "NLD": "https://ted.europa.eu/nl/notice/758597-2026/pdf",
+          "POL": "https://ted.europa.eu/pl/notice/758597-2026/pdf",
+          "POR": "https://ted.europa.eu/pt/notice/758597-2026/pdf",
+          "RON": "https://ted.europa.eu/ro/notice/758597-2026/pdf",
+          "SLK": "https://ted.europa.eu/sk/notice/758597-2026/pdf",
+          "SLV": "https://ted.europa.eu/sl/notice/758597-2026/pdf",
+          "FIN": "https://ted.europa.eu/fi/notice/758597-2026/pdf",
+          "SWE": "https://ted.europa.eu/sv/notice/758597-2026/pdf"
+        },
+        "pdfs": {
+          "DEU": "https://ted.europa.eu/de/notice/758597-2026/pdfs"
+        },
+        "html": {
+          "BUL": "https://ted.europa.eu/bg/notice/-/detail/758597-2026",
+          "SPA": "https://ted.europa.eu/es/notice/-/detail/758597-2026",
+          "CES": "https://ted.europa.eu/cs/notice/-/detail/758597-2026",
+          "DAN": "https://ted.europa.eu/da/notice/-/detail/758597-2026",
+          "DEU": "https://ted.europa.eu/de/notice/-/detail/758597-2026",
+          "EST": "https://ted.europa.eu/et/notice/-/detail/758597-2026",
+          "ELL": "https://ted.europa.eu/el/notice/-/detail/758597-2026",
+          "ENG": "https://ted.europa.eu/en/notice/-/detail/758597-2026",
+          "FRA": "https://ted.europa.eu/fr/notice/-/detail/758597-2026",
+          "GLE": "https://ted.europa.eu/ga/notice/-/detail/758597-2026",
+          "HRV": "https://ted.europa.eu/hr/notice/-/detail/758597-2026",
+          "ITA": "https://ted.europa.eu/it/notice/-/detail/758597-2026",
+          "LAV": "https://ted.europa.eu/lv/notice/-/detail/758597-2026",
+          "LIT": "https://ted.europa.eu/lt/notice/-/detail/758597-2026",
+          "HUN": "https://ted.europa.eu/hu/notice/-/detail/758597-2026",
+          "MLT": "https://ted.europa.eu/mt/notice/-/detail/758597-2026",
+          "NLD": "https://ted.europa.eu/nl/notice/-/detail/758597-2026",
+          "POL": "https://ted.europa.eu/pl/notice/-/detail/758597-2026",
+          "POR": "https://ted.europa.eu/pt/notice/-/detail/758597-2026",
+          "RON": "https://ted.europa.eu/ro/notice/-/detail/758597-2026",
+          "SLK": "https://ted.europa.eu/sk/notice/-/detail/758597-2026",
+          "SLV": "https://ted.europa.eu/sl/notice/-/detail/758597-2026",
+          "FIN": "https://ted.europa.eu/fi/notice/-/detail/758597-2026",
+          "SWE": "https://ted.europa.eu/sv/notice/-/detail/758597-2026"
+        },
+        "htmlDirect": {
+          "BUL": "https://ted.europa.eu/bg/notice/758597-2026/html",
+          "SPA": "https://ted.europa.eu/es/notice/758597-2026/html",
+          "CES": "https://ted.europa.eu/cs/notice/758597-2026/html",
+          "DAN": "https://ted.europa.eu/da/notice/758597-2026/html",
+          "DEU": "https://ted.europa.eu/de/notice/758597-2026/html",
+          "EST": "https://ted.europa.eu/et/notice/758597-2026/html",
+          "ELL": "https://ted.europa.eu/el/notice/758597-2026/html",
+          "ENG": "https://ted.europa.eu/en/notice/758597-2026/html",
+          "FRA": "https://ted.europa.eu/fr/notice/758597-2026/html",
+          "GLE": "https://ted.europa.eu/ga/notice/758597-2026/html",
+          "HRV": "https://ted.europa.eu/hr/notice/758597-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/758597-2026/html",
+          "LAV": "https://ted.europa.eu/lv/notice/758597-2026/html",
+          "LIT": "https://ted.europa.eu/lt/notice/758597-2026/html",
+          "HUN": "https://ted.europa.eu/hu/notice/758597-2026/html",
+          "MLT": "https://ted.europa.eu/mt/notice/758597-2026/html",
+          "NLD": "https://ted.europa.eu/nl/notice/758597-2026/html",
+          "POL": "https://ted.europa.eu/pl/notice/758597-2026/html",
+          "POR": "https://ted.europa.eu/pt/notice/758597-2026/html",
+          "RON": "https://ted.europa.eu/ro/notice/758597-2026/html",
+          "SLK": "https://ted.europa.eu/sk/notice/758597-2026/html",
+          "SLV": "https://ted.europa.eu/sl/notice/758597-2026/html",
+          "FIN": "https://ted.europa.eu/fi/notice/758597-2026/html",
+          "SWE": "https://ted.europa.eu/sv/notice/758597-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Németország – Szerverek – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "lav": "Vācija – Serveri – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "swe": "Tyskland – Servrar – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "gle": "An Ghearmáin – Servers – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "ell": "Γερμανία – Εξυπηρετητές – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "spa": "Alemania – Servidores – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "est": "Saksamaa – Serverid – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "nld": "Duitsland – Servers – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "fin": "Saksa – Palvelimet – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "pol": "Niemcy – Serwery – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "hrv": "Njemačka – Poslužitelji – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "ces": "Německo – Servery – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "dan": "Tyskland – Servere – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "ron": "Germania – Servere – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "por": "Alemanha – Servidores – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "slk": "Nemecko – Servery – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "fra": "Allemagne – Serveurs – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "mlt": "Il-Ġermanja – Servres – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "deu": "Deutschland – Server – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "lit": "Vokietija – Serveriai – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "ita": "Germania – Server – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "bul": "Гepмaния – Сървъри – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "slv": "Nemčija – Strežniki – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V",
+        "eng": "Germany – Servers – Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V"
+      },
+      "buyer-city": {
+        "mul": [
+          "Bonn"
+        ]
+      },
+      "title-lot": {
+        "deu": [
+          "Kauf von vier Rack-Servern für die VDI-Umgebung der Studienstiftung des deutschen Volkes e.V"
+        ]
+      }
+    },
+    {
+      "place-of-performance": [
+        "DEA22",
+        "DE300",
+        "DEU",
+        "DEU",
+        "DEA22",
+        "DE300",
+        "DEU",
+        "DEU"
+      ],
+      "deadline-receipt-tender-date-lot": [
+        "2026-11-26+01:00"
+      ],
+      "notice-type": "cn-standard",
+      "publication-number": "758672-2026",
+      "buyer-country": [
+        "DEU"
+      ],
+      "description-lot": {
+        "deu": [
+          "Die Vergabehandbücher des BMV sind in eine zentrale, webbasierte Wissensplattform zu überführen. Das System soll eine strukturierte und modulare Inhaltsverwaltung, Versionierung, Redaktion und Freigabeprozesse, Kollaborationsfunktionen, leistungsfähige Such- und Navigationsfunktionen sowie die Verknüpfung von Regelungstexten mit Vorlagen Formularen und Arbeitshilfen unterstützen. Bestandteil der Leistung sind insbesondere: - Bereitstellung eines SaaS-basierten CMS einschließlich Produktiv- und Testumgebung, - Migration und Strukturierung der bestehenden Inhalte, - Einrichtung von Rollen- und Berechtigungskonzepten, - Implementierung von Redaktions-, Prüf- und Freigabeworkflows, - Betrieb, Wartung und Support der Lösung, - Durchführung von Schulungen für Administratoren und Redakteure, - Bereitstellung optionaler KI-gestützter Funktionen auf Basis eines Retrieval-Augmented-Generation-(RAG)-Ansatzes gemäß Leistungsbeschreibung. Das System ist zunächst für die Nutzung durch interne Anwender des Geschäftsbereichs des BMV bereitzustellen und soll auch die Veröffentlichung ausgewählter Inhalte im Internet unterstützen. Die Lösung muss die Anforderungen an Datenschutz, Informationssicherheit, Barrierefreiheit sowie den Cloud-Betrieb im Umfeld der Bundesverwaltung erfüllen. ##### Weitere Informationen sind den elektronisch bereitgestellten Vergabeunterlagen zu entnehmen."
+        ]
+      },
+      "procedure-type": "open",
+      "classification-cpv": [
+        "72268000",
+        "72263000",
+        "72265000",
+        "72268000",
+        "72263000",
+        "72265000"
+      ],
+      "contract-nature": [
+        "services",
+        "services"
+      ],
+      "publication-date": "2026-11-02+01:00",
+      "buyer-name": {
+        "deu": [
+          "Bundesministerium für Verkehr"
+        ]
+      },
+      "links": {
+        "xml": {
+          "MUL": "https://ted.europa.eu/en/notice/758672-2026/xml"
+        },
+        "pdf": {
+          "BUL": "https://ted.europa.eu/bg/notice/758672-2026/pdf",
+          "SPA": "https://ted.europa.eu/es/notice/758672-2026/pdf",
+          "CES": "https://ted.europa.eu/cs/notice/758672-2026/pdf",
+          "DAN": "https://ted.europa.eu/da/notice/758672-2026/pdf",
+          "DEU": "https://ted.europa.eu/de/notice/758672-2026/pdf",
+          "EST": "https://ted.europa.eu/et/notice/758672-2026/pdf",
+          "ELL": "https://ted.europa.eu/el/notice/758672-2026/pdf",
+          "ENG": "https://ted.europa.eu/en/notice/758672-2026/pdf",
+          "FRA": "https://ted.europa.eu/fr/notice/758672-2026/pdf",
+          "GLE": "https://ted.europa.eu/ga/notice/758672-2026/pdf",
+          "HRV": "https://ted.europa.eu/hr/notice/758672-2026/pdf",
+          "ITA": "https://ted.europa.eu/it/notice/758672-2026/pdf",
+          "LAV": "https://ted.europa.eu/lv/notice/758672-2026/pdf",
+          "LIT": "https://ted.europa.eu/lt/notice/758672-2026/pdf",
+          "HUN": "https://ted.europa.eu/hu/notice/758672-2026/pdf",
+          "MLT": "https://ted.europa.eu/mt/notice/758672-2026/pdf",
+          "NLD": "https://ted.europa.eu/nl/notice/758672-2026/pdf",
+          "POL": "https://ted.europa.eu/pl/notice/758672-2026/pdf",
+          "POR": "https://ted.europa.eu/pt/notice/758672-2026/pdf",
+          "RON": "https://ted.europa.eu/ro/notice/758672-2026/pdf",
+          "SLK": "https://ted.europa.eu/sk/notice/758672-2026/pdf",
+          "SLV": "https://ted.europa.eu/sl/notice/758672-2026/pdf",
+          "FIN": "https://ted.europa.eu/fi/notice/758672-2026/pdf",
+          "SWE": "https://ted.europa.eu/sv/notice/758672-2026/pdf"
+        },
+        "pdfs": {
+          "DEU": "https://ted.europa.eu/de/notice/758672-2026/pdfs"
+        },
+        "html": {
+          "BUL": "https://ted.europa.eu/bg/notice/-/detail/758672-2026",
+          "SPA": "https://ted.europa.eu/es/notice/-/detail/758672-2026",
+          "CES": "https://ted.europa.eu/cs/notice/-/detail/758672-2026",
+          "DAN": "https://ted.europa.eu/da/notice/-/detail/758672-2026",
+          "DEU": "https://ted.europa.eu/de/notice/-/detail/758672-2026",
+          "EST": "https://ted.europa.eu/et/notice/-/detail/758672-2026",
+          "ELL": "https://ted.europa.eu/el/notice/-/detail/758672-2026",
+          "ENG": "https://ted.europa.eu/en/notice/-/detail/758672-2026",
+          "FRA": "https://ted.europa.eu/fr/notice/-/detail/758672-2026",
+          "GLE": "https://ted.europa.eu/ga/notice/-/detail/758672-2026",
+          "HRV": "https://ted.europa.eu/hr/notice/-/detail/758672-2026",
+          "ITA": "https://ted.europa.eu/it/notice/-/detail/758672-2026",
+          "LAV": "https://ted.europa.eu/lv/notice/-/detail/758672-2026",
+          "LIT": "https://ted.europa.eu/lt/notice/-/detail/758672-2026",
+          "HUN": "https://ted.europa.eu/hu/notice/-/detail/758672-2026",
+          "MLT": "https://ted.europa.eu/mt/notice/-/detail/758672-2026",
+          "NLD": "https://ted.europa.eu/nl/notice/-/detail/758672-2026",
+          "POL": "https://ted.europa.eu/pl/notice/-/detail/758672-2026",
+          "POR": "https://ted.europa.eu/pt/notice/-/detail/758672-2026",
+          "RON": "https://ted.europa.eu/ro/notice/-/detail/758672-2026",
+          "SLK": "https://ted.europa.eu/sk/notice/-/detail/758672-2026",
+          "SLV": "https://ted.europa.eu/sl/notice/-/detail/758672-2026",
+          "FIN": "https://ted.europa.eu/fi/notice/-/detail/758672-2026",
+          "SWE": "https://ted.europa.eu/sv/notice/-/detail/758672-2026"
+        },
+        "htmlDirect": {
+          "BUL": "https://ted.europa.eu/bg/notice/758672-2026/html",
+          "SPA": "https://ted.europa.eu/es/notice/758672-2026/html",
+          "CES": "https://ted.europa.eu/cs/notice/758672-2026/html",
+          "DAN": "https://ted.europa.eu/da/notice/758672-2026/html",
+          "DEU": "https://ted.europa.eu/de/notice/758672-2026/html",
+          "EST": "https://ted.europa.eu/et/notice/758672-2026/html",
+          "ELL": "https://ted.europa.eu/el/notice/758672-2026/html",
+          "ENG": "https://ted.europa.eu/en/notice/758672-2026/html",
+          "FRA": "https://ted.europa.eu/fr/notice/758672-2026/html",
+          "GLE": "https://ted.europa.eu/ga/notice/758672-2026/html",
+          "HRV": "https://ted.europa.eu/hr/notice/758672-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/758672-2026/html",
+          "LAV": "https://ted.europa.eu/lv/notice/758672-2026/html",
+          "LIT": "https://ted.europa.eu/lt/notice/758672-2026/html",
+          "HUN": "https://ted.europa.eu/hu/notice/758672-2026/html",
+          "MLT": "https://ted.europa.eu/mt/notice/758672-2026/html",
+          "NLD": "https://ted.europa.eu/nl/notice/758672-2026/html",
+          "POL": "https://ted.europa.eu/pl/notice/758672-2026/html",
+          "POR": "https://ted.europa.eu/pt/notice/758672-2026/html",
+          "RON": "https://ted.europa.eu/ro/notice/758672-2026/html",
+          "SLK": "https://ted.europa.eu/sk/notice/758672-2026/html",
+          "SLV": "https://ted.europa.eu/sl/notice/758672-2026/html",
+          "FIN": "https://ted.europa.eu/fi/notice/758672-2026/html",
+          "SWE": "https://ted.europa.eu/sv/notice/758672-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Németország – Szoftverellátási szolgáltatások – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "lav": "Vācija – Programmatūras piegādes pakalpojumi – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "swe": "Tyskland – Tillhandahållande av programvara – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "gle": "An Ghearmáin – Software supply services – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "ell": "Γερμανία – Υπηρεσίες προμήθειας λογισμικού – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "spa": "Alemania – Servicios de suministro de software – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "est": "Saksamaa – Tarkvara tarnimisteenused – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "nld": "Duitsland – Leveren van software – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "fin": "Saksa – Ohjelmiston toimituspalvelut – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "pol": "Niemcy – Usługi dostawy oprogramowania – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "hrv": "Njemačka – Usluge dobave programske podrške – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "ces": "Německo – Dodávka programového vybavení – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "dan": "Tyskland – Levering af programmel – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "ron": "Germania – Servicii de furnizare de software – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "por": "Alemanha – Serviços de fornecimento de software – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "slk": "Nemecko – Dodávky softvéru – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "fra": "Allemagne – Services de fourniture de logiciels – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "mlt": "Il-Ġermanja – Servizzi tal-forniment tas-software – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "deu": "Deutschland – Bereitstellung von Software – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "lit": "Vokietija – Programinės įrangos tiekimo paslaugos – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "ita": "Germania – Servizi di fornitura di software – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "bul": "Гepмaния – Услуги по доставка на софтуерни продукти – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "slv": "Nemčija – Storitve oskrbe s programsko opremo – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV",
+        "eng": "Germany – Software supply services – Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV"
+      },
+      "buyer-city": {
+        "mul": [
+          "Bonn"
+        ]
+      },
+      "title-lot": {
+        "deu": [
+          "Bereitstellung eines CMS und Implementierung der Vergabehandbücher des BMV"
+        ]
+      }
+    }
+  ],
+  "totalNoticeCount": 86,
+  "iterationNextToken": "AAABof59lXoABKzyLQ6ym0K7O6tSgexDrtlW8PEnXUUpJSb53q918TjBzRciFBuDvLVznT34M8Jo7mvaw4HhlItkmU3IQl3hqm/06x4lxsz1B0OA1tYm0g==",
+  "timedOut": false
+}
