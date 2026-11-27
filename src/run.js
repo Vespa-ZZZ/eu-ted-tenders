@@ -1,4 +1,5 @@
 import { setTimeout as delay } from 'node:timers/promises';
+import { pushDataWithinLimit } from './charging.js';
 import { FIELDS, InputError, SEARCH_URL, buildQuery, normalizeNotice, sanitize } from './ted.js';
 
 const USER_AGENT = 'eu-ted-tenders-actor/1.0';
@@ -117,7 +118,7 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
                 if (pushed + out.length >= maxItems) break;
             }
             if (out.length) {
-                const result = await actor.pushData(out);
+                const result = await pushDataWithinLimit(actor, out);
                 chargeLimitReached = result?.eventChargeLimitReached === true;
                 const saved = chargeLimitReached ? out.slice(0, result.chargedCount) : out;
                 pushed += saved.length;
@@ -137,7 +138,9 @@ export async function run({ actor, log, fetchImpl = fetch, sleep = delay, now = 
             await store.setValue(`seen-${stateKey}`, Object.fromEntries(seenMap));
         }
 
-        await actor.setValue('RUN_SUMMARY', { query, totalMatching: total, pushed, pages });
+        await actor.setValue('RUN_SUMMARY', {
+            query, totalMatching: total, pushed, pages, ...(chargeLimitReached && { stopReason: 'spendingLimit' }),
+        });
         if (pushed === 0 && !chargeLimitReached) log.info(onlyNew ? 'No new notices since the last run.' : 'No notices matched.');
         log.info(`Done. Pushed ${pushed} notices.`);
         await actor.exit();

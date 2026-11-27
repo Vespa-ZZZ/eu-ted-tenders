@@ -6,7 +6,7 @@ import { run } from '../src/run.js';
 const page = JSON.parse(readFileSync(new URL('./fixtures/search-page.json', import.meta.url), 'utf8'));
 const NOW = () => new Date('2026-11-03T10:00:00Z');
 
-async function exec(input, respond, state = new Map(), chargeResult) {
+async function exec(input, respond, state = new Map(), chargeResult, configureActor) {
     const records = [];
     const lifecycle = [];
     const bodies = [];
@@ -37,6 +37,7 @@ async function exec(input, respond, state = new Map(), chargeResult) {
         bodies.push(b);
         return respond(b, bodies.length);
     };
+    configureActor?.(actor, records);
     await run({ actor, log, fetchImpl, sleep: async () => {}, now: NOW });
     return { records, lifecycle, bodies, state, warnings, pushes, summary: values.get('RUN_SUMMARY') };
 }
@@ -136,4 +137,24 @@ test('without a lower date bound, old seen entries are kept', async () => {
     const r = await exec({ publishedTo: '2026-11-02', onlyNew: true }, () => ok({ ...page, iterationNextToken: null }), state);
     assert.ok(!r.records.some((x) => x.publicationNumber === '757629-2026'));
     assert.equal(state.get('seen-default')['757629-2026'], '2020-01-01');
+});
+
+test('prechecks the dataset item budget and allows non-PPE output', async () => {
+    for (const [isPayPerEvent, budget] of [[true, 1], [true, 0], [false, 0]]) {
+        const configureActor = (actor, records) => {
+            actor.getChargingManager = () => ({
+                getPricingInfo: () => ({ isPayPerEvent }),
+                calculateMaxEventChargeCountWithinLimit(event) {
+                    assert.equal(event, 'apify-default-dataset-item');
+                    return budget - records.length;
+                },
+            });
+        };
+        const result = await exec({ onlyNew: true }, () => ok({ ...page, iterationNextToken: null }), new Map(), undefined, configureActor);
+        assert.deepEqual(result.lifecycle, ['exit']);
+        assert.equal(result.records.length, isPayPerEvent ? budget : 3);
+        assert.equal(result.summary.pushed, result.records.length);
+        assert.equal(result.summary.stopReason, isPayPerEvent ? 'spendingLimit' : undefined);
+        assert.equal(result.pushes, result.records.length ? 1 : 0);
+    }
 });
